@@ -50,7 +50,7 @@ while True:
 		
 		@R_H_U المطور1 
 		●━━━━━━━━━━━━━━━●
-		 + \n'' )
+		 + \n''')
 		i = requests.post(tlg)		
 		
 	else:
