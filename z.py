@@ -6,9 +6,9 @@ F = '\033[2;32m' #اخضر
 A = '\033[2;34m'#ازرق
 C = '\033[2;35m' #وردي
 B = '\033[2;36m'#سمائي
-Y = '\033[1;34m' #ا
-id = input(B+'Enter Your Id => ')
-tok = input(B+'Enter Your Token => ')
+Y = '\033[1;34m' #خرياني
+id = input(B+'ايدي عزيزي => ')
+tok = input(B+'حط توكن  => ')
 print(Z+'='*58)
 xz ='AASSDDFFGGHHJJKKLLQQWWEERRTTYYUUIIOOPPMMNNBBVVCXXZZ'
 H = '1234567890'
@@ -38,14 +38,14 @@ while True:
 	A = [Us,USER]
 	USERNAME = str(random.choice(A))
 	
-	url=f"https://t.me/{USERNAME}"
+	url=f"تعال المطي افحص يوزر https://t.me/{USERNAME}"
 	req = requests.get(url).text
 	if '"tgme_username_link"' in req:
-		print(F+'Done  | ' + USERNAME )
+		print(F+'متاح  | ' + USERNAME )
 		tlg = (f'''https://api.telegram.org/bot{tok}/sendMessage?chat_id={id}&text=@{USERNAME} + \n''')
 		i = requests.post(tlg)		
 		
 	else:
-		print(Z+'ERORR  | '+USERNAME)
+		print(Z+'مستخدم  | '+USERNAME)
 		
 		
