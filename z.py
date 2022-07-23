@@ -42,7 +42,7 @@ while True:
 	req = requests.get(url).text
 	if '"tgme_username_link"' in req:
 		print(F+'متاح  | ' + USERNAME )
-		tlg = (f'''https://api.telegram.org/bot{tok}/sendMessage?chat_id={id}&text=@{USERNAME} صدت واحد تعال+ \n''')
+		tlg = (f'''https://api.telegram.org/bot{tok}/sendMessage?chat_id={id}&text= اهلا صدتلك يوزر@{USERNAME}المطور @R_H_U + \n''')
 		i = requests.post(tlg)		
 		
 	else:
