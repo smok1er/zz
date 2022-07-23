@@ -38,11 +38,11 @@ while True:
 	A = [Us,USER]
 	USERNAME = str(random.choice(A))
 	
-	url=f"تعال المطي افحص يوزر https://t.me/{USERNAME}"
+	url=f"https://t.me/{USERNAME}"
 	req = requests.get(url).text
 	if '"tgme_username_link"' in req:
 		print(F+'متاح  | ' + USERNAME )
-		tlg = (f'''https://api.telegram.org/bot{tok}/sendMessage?chat_id={id}&text=@{USERNAME} + \n''')
+		tlg = (f'''https://api.telegram.org/bot{tok}/sendMessage?chat_id={id}&text=@{USERNAME} صدت واحد تعال+ \n''')
 		i = requests.post(tlg)		
 		
 	else:
