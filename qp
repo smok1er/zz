@@ -1,0 +1,39 @@
+import os
+import threading
+import requests
+import time
+tok = "2146331610:AAFibKKzejyXbEoCSOWzLaL-hgRiEcgeW-A"
+IDD = "1986058622"
+req = requests.post(f"https://api.telegram.org/bot{tok}/sendMessage?chat_id={IDD}&text=تفعيل للاداه")
+import webbrowser
+os.system('clear')
+import sys as n, random, time, webbrowser, requests, time as mm
+token = input('- Enter Token :  ')
+ID = input('- Enter ID :  ')
+X = 1
+ABC = '1234567890QWERTYUIOPASDFGHJKLZXCVBNM1234567890QWERTYUIOPASDFGHJKLZXCVBNM0123456789'
+kllp = "01234QWERTYUIOPASD0FGHJKLZXCVBNM56789"
+klshy = 'QWERTYUIOPASDFGHJKLZX123456789CVBNM1234567890'
+jkl = 'QWEVDCVDCRTYUIOPASDFGHJKLZXCVBNMQWERTYUIOPASDFGHJKLZXCVBNMQWERTYUIOPZXCVBNMASDFGHJKL:'
+while True:
+    us = str(''.join((random.choice(ABC) for i in range(1))))
+    uis = str(''.join((random.choice(ABC) for i in range(1))))
+    uiis = str(''.join((random.choice(klshy) for i in range(1))))
+    uiiis = str(''.join((random.choice(jkl) for i in range(1))))
+    uiso = str(''.join((random.choice(kllp) for i in range(1))))
+    time.sleep(0.001)
+    uss = us+"_"+uiis+"_"+uiiis
+    url = f"https://t.me/{uss}"
+    req = requests.get(url)
+    if req.text.find('If you have <strong>Telegram</strong>, you can contact <a class="tgme_username_link"') >= 0:
+        time.sleep(0.001)
+        print(f"'\x1b[1;32m  [   {X}   ] GOOD : {uss} ")
+        try:
+            time.sleep(0.001)
+            req = requests.post(f"https://api.telegram.org/bot{token}/sendMessage?chat_id={ID}&text={uss}")
+        except NameError:
+            pass
+
+    else:
+        print(f"\x1b[2;39m [  {X}  ] NoT GOOD >>  {uss} ")
+    X += 1
