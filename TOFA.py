@@ -82,7 +82,7 @@ def bot3():
 		req = requests.get(url)
 		if req.text.find('If you have <strong>Telegram</strong>, you can contact <a class="tgme_username_link"')>=0: 
 			print(f" \033[1;32m - work >> [ {user33} ]")
-			req = requests.post(f'''https://api.telegram.org/bot{token}/sendMessage?chat_id={ID}&text=- Hi New Telegram User .\n. — — — — —  — — — — — .\n- User :  @{user33} \n by : @H_C_4 - @BBQBBBBB''')
+			req = requests.post(f'''https://api.telegram.org/bot{token}/sendMessage?chat_id={ID}&text=- Hi New Telegram User .\n. — — — — —  — — — — — .\n- User :  @{user33} \n by : @H_P_K - @C_P_8''')
 		else:
 			  print(f"\033[1;31m - Not Work >> [ {user33} ]")
 if Aljoker =='1':
